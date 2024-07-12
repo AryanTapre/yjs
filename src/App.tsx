@@ -9,6 +9,8 @@ import { QuillBinding } from 'y-quill';
 import {WebsocketProvider} from 'y-websocket'
 import QuillCursors from 'quill-cursors';
 
+
+
 function App() {
   const quillRef = useRef(null);
 
@@ -55,7 +57,7 @@ function App() {
         console.log("delta:",event.changes);
         
        })
-       
+
        console.log("client id: "+ydoc.clientID);
        
 
