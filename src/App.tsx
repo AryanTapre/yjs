@@ -50,9 +50,7 @@ function App() {
       const ytext = ydoc.getText('quill');
       const provider = new WebsocketProvider('wss://demos.yjs.dev','quill-demo-room',ydoc);
 
-    
-
-
+  
        ytext.observe(event => {
         console.log("delta:",event.changes);
         
@@ -90,9 +88,7 @@ function App() {
      // awareness.setLocalState(null);
 
       const binidng = new QuillBinding(ytext,quill,awareness);
-    
     }
-    
 
   },[])
 
